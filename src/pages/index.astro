@@ -1,6 +1,7 @@
 ---
 import Layout from '../components/Layout.astro';
 import heroBannerImage from '../../public/assets/img/img-herobanner.png';
+import rectangleImage from '../../public/assets/img/rectangle-1.png';
 ---
 
 <Layout title="Ben Ricciardi" description="Ben Ricciardi's personal website" currentPage="home">
@@ -90,36 +91,36 @@ import heroBannerImage from '../../public/assets/img/img-herobanner.png';
 			</div>
 
 			<!-- Main Content -->
-			<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+			<div class="flex gap-40 items-stretch justify-between min-h-[400px]">
 				<!-- Left Column - Image and Title -->
-				<div class="space-y-8">
+				<div class="w-full max-w-[300px] flex flex-col justify-between">
 					<!-- Profile Image -->
 					<div class="relative">
-						<div class="relative overflow-hidden" style="border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;">
+						<div class="relative overflow-hidden">
 							<img 
-								src="/assets/img/portrait.png" 
+								src={rectangleImage.src} 
 								alt="Ben Ricciardi portrait" 
-								class="w-full h-[400px] object-cover"
+								class="w-full h-[116px] object-cover rounded-[200px]"
 							/>
 						</div>
 					</div>
 					
 					<!-- Title -->
-					<h2 class="text-white text-[80px] font-bold font-gazzetta uppercase leading-[70px]">
+					<h2 class="text-white text-9xl font-bold font-gazzetta uppercase leading-[93px]">
 						WHO'S<br>
 						BEN?
 					</h2>
 				</div>
 				
 				<!-- Right Column - Content -->
-				<div class="space-y-8">
+				<div class="w-full max-w-[840px]">
 					<!-- Headline -->
-					<h3 class="text-white text-[48px] font-bold font-gazzetta leading-[52px]">
-						Dynamic, ambitious, and unstoppable <span class="text-[var(--primary-red)]">Ben</span> is not just a golfer, but a <em>connector</em> of people and <em>opportunities</em>.
+					<h3 class="font-aktiv leading-[60px]">
+						<span class="text-white text-5xl font-medium">Dynamic, ambitious, and unstoppable </span><span class="text-red-600 text-5xl font-bold">Ben</span><span class="text-white text-5xl font-medium"> is not just a golfer, but a </span><span class="text-white text-5xl font-medium italic">connector</span><span class="text-white text-5xl font-medium"> of people and </span><span class="text-white text-5xl font-medium italic">opportunities</span><span class="text-white text-5xl font-medium">. <br/></span>
 					</h3>
 					
 					<!-- Body Paragraph -->
-					<p class="text-white text-xl font-normal font-aktiv leading-8">
+					<p class="text-white text-3xl font-light font-aktiv leading-10">
 						With an impressive presence on and off the course, he combines his love for golf with his passion for building powerful business relationships. Every swing tells a story of discipline, focus, and determination — qualities that also define his professional life.
 					</p>
 				</div>
