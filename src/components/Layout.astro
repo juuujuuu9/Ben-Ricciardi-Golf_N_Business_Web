@@ -5,9 +5,10 @@ import Header from './Header.astro';
 export interface Props {
 	title: string;
 	description?: string;
+	currentPage?: string;
 }
 
-const { title, description = "Ben Ricciardi's personal website" } = Astro.props;
+const { title, description = "Ben Ricciardi's personal website", currentPage = 'home' } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -23,7 +24,7 @@ const { title, description = "Ben Ricciardi's personal website" } = Astro.props;
 		<link rel="stylesheet" href="https://use.typekit.net/akt4qwg.css">
 	</head>
 	<body class="font-aktiv leading-relaxed w-full text-white bg-black">
-		<Header />
+		<Header currentPage={currentPage} />
 		<main class="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-20 py-8">
 			<slot />
 		</main>
