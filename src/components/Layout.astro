@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Ben Ricciardi's personal website" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="stylesheet" href="https://use.typekit.net/ufo4vwg.css">
+	</head>
+	<body class="font-gazzetta leading-relaxed max-w-4xl mx-auto p-8 text-gray-800 bg-gray-50" style="font-variation-settings: 'wght' 400;">
+		<main class="bg-white p-8 rounded-lg shadow-lg">
+			<slot />
+		</main>
+	</body>
+</html>

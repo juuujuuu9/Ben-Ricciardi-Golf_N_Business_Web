@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Gazzetta Variable Font Styles */
+.font-gazzetta {
+  font-family: "gazzetta-variable", sans-serif;
+  font-variation-settings: "wght" 400;
+}
+
+.font-gazzetta-light {
+  font-family: "gazzetta-variable", sans-serif;
+  font-variation-settings: "wght" 300;
+}
+
+.font-gazzetta-medium {
+  font-family: "gazzetta-variable", sans-serif;
+  font-variation-settings: "wght" 500;
+}
+
+.font-gazzetta-bold {
+  font-family: "gazzetta-variable", sans-serif;
+  font-variation-settings: "wght" 700;
+}
+
+.font-gazzetta-black {
+  font-family: "gazzetta-variable", sans-serif;
+  font-variation-settings: "wght" 900;
+}

@@ -1,16 +1,17 @@
 ---
-
+import Layout from '../components/Layout.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Ben Ricciardi" description="Ben Ricciardi's personal website">
+	<div>
+		<h1 class="text-4xl font-gazzetta-black text-slate-800 mb-4 text-center">Ben Ricciardi</h1>
+		<p class="text-center mb-4 text-lg font-gazzetta-medium">Welcome to my personal website!</p>
+		<p class="text-center mb-4 text-gray-600 font-gazzetta-light">This site is built with Astro and Tailwind CSS, featuring the beautiful Gazzetta variable font.</p>
+		
+		<nav class="mt-8 text-center">
+			<a href="/about" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200">
+				About Me
+			</a>
+		</nav>
+	</div>
+</Layout>
