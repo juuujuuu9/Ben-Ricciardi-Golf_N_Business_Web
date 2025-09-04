@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Header from './Header.astro';
 
 export interface Props {
 	title: string;
@@ -19,9 +20,11 @@ const { title, description = "Ben Ricciardi's personal website" } = Astro.props;
 		<title>{title}</title>
 		<meta name="description" content={description} />
 		<link rel="stylesheet" href="https://use.typekit.net/ufo4vwg.css">
+		<link rel="stylesheet" href="https://use.typekit.net/akt4qwg.css">
 	</head>
-	<body class="font-gazzetta leading-relaxed max-w-4xl mx-auto p-8 text-gray-800 bg-gray-50" style="font-variation-settings: 'wght' 400;">
-		<main class="bg-white p-8 rounded-lg shadow-lg">
+	<body class="font-aktiv leading-relaxed w-full text-white bg-black">
+		<Header />
+		<main class="w-full max-w-[1440px] mx-auto px-4 sm:px-8 lg:px-20 py-8">
 			<slot />
 		</main>
 	</body>

@@ -1,6 +1,31 @@
 @import "tailwindcss";
 
-/* Gazzetta Variable Font Styles */
+/* CSS Variables */
+:root {
+  --primary-red: #D63A2E;
+}
+
+/* Aktiv Grotesk Font Styles */
+.font-aktiv {
+  font-family: "aktiv-grotesk", sans-serif;
+}
+
+.font-aktiv-light {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 300;
+}
+
+.font-aktiv-medium {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 500;
+}
+
+.font-aktiv-bold {
+  font-family: "aktiv-grotesk", sans-serif;
+  font-weight: 700;
+}
+
+/* Gazzetta Variable Font Styles (for titles) */
 .font-gazzetta {
   font-family: "gazzetta-variable", sans-serif;
   font-variation-settings: "wght" 400;
