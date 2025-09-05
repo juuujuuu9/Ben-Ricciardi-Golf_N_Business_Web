@@ -2,6 +2,8 @@
 import Layout from '../components/Layout.astro';
 import heroBannerImage from '../../public/assets/img/img-herobanner.png';
 import rectangleImage from '../../public/assets/img/rectangle-1.png';
+import thumbImage from '../../public/assets/img/thumb-1.jpg';
+import thumb2Image from '../../public/assets/img/thumb-2.jpg';
 ---
 
 <Layout title="Ben Ricciardi" description="Ben Ricciardi's personal website" currentPage="home">
@@ -130,8 +132,14 @@ import rectangleImage from '../../public/assets/img/rectangle-1.png';
 	</section>
 	<section class="w-full py-20">
 		<div class="w-full max-w-[1400px] mx-auto flex flex-row gap-12 justify-between">
-			<div class="w-2/3 flex flex-col gap-15 h-[400px]">
-			    <div class="w-full h-full bg-red-500">
+			<div class="w-2/3 flex flex-col gap-15 items-end h-[400px]">
+			    <div class="relative w-2/3 aspect-[1024/683] bg-cover bg-center bg-no-repeat rounded-[10px]" style={`background-image: url(${thumbImage.src})`}>
+					<!-- PLAY BUTTON -->
+					<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/40 rounded-full border border-white">
+						<svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path d="M21.409 9.35294C21.8893 9.60835 22.291 9.98963 22.5712 10.4559C22.8514 10.9222 22.9994 11.456 22.9994 11.9999C22.9994 12.5439 22.8514 13.0777 22.5712 13.544C22.291 14.0102 21.8893 14.3915 21.409 14.6469L8.597 21.6139C6.534 22.7359 4 21.2759 4 18.9679V5.03294C4 2.72294 6.534 1.26394 8.597 2.38494L21.409 9.35294Z" fill="white"/>
+						</svg>
+					</div>
 				</div>
 				<div class="w-full h-full gap-8 flex flex-col">
 					<h2 class="text-white text-5xl font-bold font-aktiv leading-10">Golf is more than a game</h2>
@@ -157,7 +165,14 @@ import rectangleImage from '../../public/assets/img/rectangle-1.png';
 					</a>
 				</div>
 			</div>
-			<div class="w-1/3 bg-white"></div>
+			<div class="relative w-1/3 aspect-[436.67001/695] bg-cover bg-center bg-no-repeat rounded-[10px]" style={`background-image: url(${thumb2Image.src})`}>
+				<!-- PLAY BUTTON -->
+				<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white/40 rounded-full border border-white">
+					<svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M21.409 9.35294C21.8893 9.60835 22.291 9.98963 22.5712 10.4559C22.8514 10.9222 22.9994 11.456 22.9994 11.9999C22.9994 12.5439 22.8514 13.0777 22.5712 13.544C22.291 14.0102 21.8893 14.3915 21.409 14.6469L8.597 21.6139C6.534 22.7359 4 21.2759 4 18.9679V5.03294C4 2.72294 6.534 1.26394 8.597 2.38494L21.409 9.35294Z" fill="white"/>
+					</svg>
+				</div>
+			</div>
 		</div>
 	</section>
 </Layout>
