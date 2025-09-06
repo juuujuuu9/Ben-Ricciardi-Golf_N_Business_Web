@@ -8,8 +8,8 @@ import thumb2Image from '../../public/assets/img/thumb-2.jpg';
 
 <Layout title="Ben Ricciardi" description="Ben Ricciardi's personal website" currentPage="home">
 	<!-- Hero Section -->
-	<section class="w-full py-20">
-		<div class="w-full max-w-[1440px] mx-auto">
+	<section class="w-full max-w-[1440px] mx-auto py-20">
+		<div class="w-full">
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
 				<!-- Left Column - Text Content -->
 				<div class="space-y-8">
@@ -295,6 +295,32 @@ import thumb2Image from '../../public/assets/img/thumb-2.jpg';
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- REVIEWS SECTION -->
+	<section class="relative w-full py-25 overflow-x-hidden">
+		<div class="w-full max-w-[1440px] mx-auto flex flex-row gap-0 justify-between">
+			<div class="w-1/2 flex flex-col gap-20 pr-20">
+				<div class="flex justify-between items-center mb-16">
+					<div class="text-white text-base font-medium font-aktiv uppercase leading-loose tracking-[4px]">04</div>
+					<div class="text-white text-base font-medium font-aktiv uppercase leading-loose tracking-[4px]">Reviews</div>
+				</div>
+				<div class="flex flex-col gap-20">
+					<div class="w-full max-w-[480px] justify-center"><span class="text-white text-4xl font-medium font-aktiv leading-[52px]">“For </span><span class="text-red-600 text-4xl font-bold font-aktiv leading-[52px]">Ben</span><span class="text-white text-4xl font-medium font-aktiv leading-[52px]">, golf is the gateway to opportunities. He believes that the best partnerships are built while walking the fairway. By combining vision, energy, and strategy, he connects with leaders and entrepreneurs, turning a shared passion for golf into successful business ventures.”</span></div>
+				</div>
+				<a href="#" class="w-fit pl-5 pr-3 py-4 rounded-xl outline outline-1 outline-offset-[-1px] outline-white inline-flex items-center gap-8 bg-black hover:bg-gray-900 transition-colors duration-200">
+					<span class="text-white text-2xl font-medium font-aktiv leading-loose">Let's talk</span>
+					<div class="w-8 h-8 bg-red-600 rounded-full flex items-center justify-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 18 18" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="absolute top-0 left-1/2 transform  w-[50vw] h-full bg-[url('/assets/img/portrait.png')] bg-cover bg-center rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-[60px]">
+			<div class="absolute top-13 left-11 justify-center text-white text-9xl font-extrabold font-gazzetta uppercase leading-[90px]">Where passion <br/>for the game <br/>meets the success.</div>
 		</div>
 	</section>
 
