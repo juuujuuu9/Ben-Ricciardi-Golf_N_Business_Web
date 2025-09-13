@@ -281,9 +281,11 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 	<section class="relative w-full px-20" id="roundabout">
 		<div class="w-full max-w-[1440px] mx-auto flex flex-row gap-0 justify-between items-start min-h-[70vw]">
 			<div class="absolute top-1/2 -translate-y-1/2 right-[calc(50vw+3rem)] w-[70vw] ratio-[1/1] h-[70vw] rounded-full bg-[#A6A6A64D]">
-				<!-- Crosshair lines -->
 				<!-- Horizontal line -->
-				<div class="absolute top-1/2 left-0 w-full h-0.5 bg-[#D63A2E] -translate-y-1/2"></div>
+				<div class="absolute top-1/2 -translate-y-1/2 left-0 w-full h-0.5 bg-[#D63A2E]">
+					<div class="absolute -top-4 bottom-4 -right-18 w-8 h-8 bg-red-600 rounded-lg z-50"></div>
+				</div>
+				
 				<!-- Middle Ring Circle -->
 				<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-200px)] h-[calc(100%-200px)] border border-[#A6A6A64D] bg-black rounded-full"></div>
 				<!-- Center Circle -->
@@ -303,11 +305,25 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 							</li>
 						</ul>
 					</div>
+					<!-- Year Numbers positioned around the circle -->
+					<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
+					<!-- 2023 - Top left -->
+					<div class="absolute top-[11%] left-[46%] text-white text-2xl font-bold font-aktiv transform -rotate-90" data-year="2023">2023</div>
+					
+					<!-- 2024 - Top right -->
+					<div class="absolute top-[23%] right-[19%] text-white text-2xl font-bold font-aktiv transform -rotate-45" data-year="2024">2024</div>
+					
+					<!-- 2025 - Right side (aligned with red line) -->
+					<div class="absolute top-1/2 right-[9%] -translate-y-1/2 text-white text-2xl font-bold font-aktiv" data-year="2025">2025</div>
+					
+					<!-- Q3 - Top center
+					<div class="absolute top-[5%] left-1/2 -translate-x-1/2 text-white text-lg font-medium font-aktiv uppercase tracking-wider" data-quarter="Q3">03</div> -->
+				</div>
 				</div>
 			</div>
 			<div class="w-1/2 pl-24 flex flex-col gap-20"></div>
-			<div class="w-1/2 pt-36 pl-24 flex flex-col gap-20">
-				<div class="text-white text-base font-medium font-aktiv uppercase leading-loose tracking-[4px]" id="ga-anchor">GOLF ACHIEVEMENTS</div>
+			<div class="w-1/2 pt-16 pl-24 flex flex-col gap-20">
+				<div class="pt-20 text-white text-base font-medium font-aktiv uppercase leading-loose tracking-[4px]" id="ga-anchor">GOLF ACHIEVEMENTS</div>
 				<div class="flex flex-col gap-20">
 					<h2 class="text-white text-9xl font-bold font-gazzetta uppercase leading-[105px]">
 						Mentality that conquered<br/>
