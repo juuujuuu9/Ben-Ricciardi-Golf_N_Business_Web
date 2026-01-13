@@ -150,22 +150,63 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 
 				<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[84px] text-center break-words">Latest content</h2>
 
-				<!-- Gallery -->
-				<div class="relative w-full">
-					<div class="h-[324px] rounded-[20px] overflow-hidden relative">
-						<img src="/assets/img/rectangle-1.png" alt="Latest content" class="absolute inset-0 w-full h-full object-cover" />
-						<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40"></div>
-					</div>
-					<!-- Navigation Arrows -->
-					<div class="absolute top-[146px] left-0 right-0 flex justify-between px-5">
-						<button class="rotate-180 scale-y-[-100%] bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center">
+				<!-- 3D Carousel Slider -->
+				<div class="relative w-full h-[324px] flex items-center justify-center">
+					<div class="carousel-container relative w-full h-full perspective-1000 flex items-center justify-center">
+						<div class="carousel-track-mobile relative w-full h-[324px] transform-style-preserve-3d transition-transform duration-700 ease-out flex items-center justify-center" id="carouselTrackMobile">
+							<!-- Slide 1 -->
+							<div class="carousel-slide-mobile absolute w-[calc(100%-40px)] h-[280px] transition-all duration-700 ease-out" data-index="0">
+								<div class="relative w-full h-full rounded-[20px] overflow-hidden shadow-2xl transform translate-z-0">
+									<img 
+										src="/assets/img/thumb-1.jpg" 
+										alt="Golf course with mountain view" 
+										class="w-full h-full object-cover"
+									/>
+									<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								</div>
+							</div>
+							
+							<!-- Slide 2 -->
+							<div class="carousel-slide-mobile absolute w-full h-[324px] transition-all duration-700 ease-out" data-index="1">
+								<div class="relative w-full h-full rounded-[20px] overflow-hidden shadow-2xl transform translate-z-0">
+									<img 
+										src="/assets/img/thumb-2.jpg" 
+										alt="Golfer in action" 
+										class="w-full h-full object-cover"
+									/>
+									<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								</div>
+							</div>
+							
+							<!-- Slide 3 -->
+							<div class="carousel-slide-mobile absolute w-[calc(100%-40px)] h-[280px] transition-all duration-700 ease-out" data-index="2">
+								<div class="relative w-full h-full rounded-[20px] overflow-hidden shadow-2xl transform translate-z-0">
+									<img 
+										src="/assets/img/portrait.png" 
+										alt="Golf ball close-up" 
+										class="w-full h-full object-cover"
+									/>
+									<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Navigation Arrows -->
+						<button 
+							id="prevBtnMobile"
+							class="carousel-nav carousel-prev absolute left-2 top-1/2 transform -translate-y-1/2 z-20 w-8 h-8 bg-[#d63a2e] rounded-full flex items-center justify-center hover:bg-red-600 transition-colors duration-200 shadow-lg cursor-pointer"
+						>
 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M3.95371 9.90005L10.0863 16.0336L8.81371 17.3062L0.507612 9.00005L8.81461 0.693953L10.0863 1.96655L3.95371 8.10005L17.1198 8.10005L17.1198 9.90005L3.95371 9.90005Z" fill="white"/>
 							</svg>
 						</button>
-						<button class="scale-y-[-100%] bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center">
+						
+						<button 
+							id="nextBtnMobile"
+							class="carousel-nav carousel-next absolute right-2 top-1/2 transform -translate-y-1/2 z-20 w-8 h-8 bg-[#d63a2e] rounded-full flex items-center justify-center hover:bg-red-600 transition-colors duration-200 shadow-lg cursor-pointer"
+						>
 							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.0463 8.09995L7.91369 1.96645L9.18629 0.693848L17.4924 8.99995L9.18539 17.306L7.91369 16.0334L14.0463 9.89995H0.880188V8.09995H14.0463Z" fill="white"/>
 							</svg>
 						</button>
 					</div>
@@ -1168,27 +1209,28 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 		
 		.carousel-slide {
 			backface-visibility: hidden;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
 		}
 		
 		.carousel-slide[data-index="0"] {
 			transform: translateX(-507px) rotateY(-5deg) translateZ(-100px);
-			opacity: 0.6;
 		}
 		
 		.carousel-slide[data-index="1"] {
 			transform: translateX(0) rotateY(0deg) translateZ(0px);
-			opacity: 1;
-			z-index: 10;
 		}
 		
 		.carousel-slide[data-index="2"] {
 			transform: translateX(487px) rotateY(5deg) translateZ(-100px);
-			opacity: 0.6;
 		}
 		
 		.carousel-slide.active {
 			transform: translateX(0) rotateY(0deg) translateZ(0px) !important;
 			opacity: 1 !important;
+			visibility: visible !important;
+			pointer-events: auto !important;
 			z-index: 10 !important;
 			width: 452px !important;
 			height: 757px !important;
@@ -1196,14 +1238,18 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 		
 		.carousel-slide.prev {
 			transform: translateX(-487px) rotateY(-5deg) translateZ(-100px) !important;
-			opacity: 0.6 !important;
+			opacity: 0 !important;
+			visibility: hidden !important;
+			pointer-events: none !important;
 			width: 372px !important;
 			height: 625px !important;
 		}
 		
 		.carousel-slide.next {
 			transform: translateX(487px) rotateY(5deg) translateZ(-100px) !important;
-			opacity: 0.6 !important;
+			opacity: 0 !important;
+			visibility: hidden !important;
+			pointer-events: none !important;
 			width: 372px !important;
 			height: 625px !important;
 		}
@@ -1219,11 +1265,63 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 				opacity: 1;
 			}
 		}
+		
+		/* Mobile Carousel Styles */
+		.carousel-slide-mobile {
+			backface-visibility: hidden;
+			opacity: 0;
+			visibility: hidden;
+			pointer-events: none;
+		}
+		
+		.carousel-slide-mobile[data-index="0"] {
+			transform: translateX(-280px) rotateY(-5deg) translateZ(-50px);
+		}
+		
+		.carousel-slide-mobile[data-index="1"] {
+			transform: translateX(0) rotateY(0deg) translateZ(0px);
+		}
+		
+		.carousel-slide-mobile[data-index="2"] {
+			transform: translateX(280px) rotateY(5deg) translateZ(-50px);
+		}
+		
+		.carousel-slide-mobile.active {
+			transform: translateX(0) rotateY(0deg) translateZ(0px) !important;
+			opacity: 1 !important;
+			visibility: visible !important;
+			pointer-events: auto !important;
+			z-index: 10 !important;
+			width: 100% !important;
+			height: 324px !important;
+		}
+		
+		.carousel-slide-mobile.prev {
+			transform: translateX(-280px) rotateY(-5deg) translateZ(-50px) !important;
+			opacity: 0 !important;
+			visibility: hidden !important;
+			pointer-events: none !important;
+			width: calc(100% - 40px) !important;
+			height: 280px !important;
+		}
+		
+		.carousel-slide-mobile.next {
+			transform: translateX(280px) rotateY(5deg) translateZ(-50px) !important;
+			opacity: 0 !important;
+			visibility: hidden !important;
+			pointer-events: none !important;
+			width: calc(100% - 40px) !important;
+			height: 280px !important;
+		}
 	</style>
 
 	<script>
+		// Desktop carousel state
 		let currentSlide = 1;
 		const totalSlides = 3;
+		
+		// Mobile carousel state
+		let currentSlideMobile = 1;
 		
 		function updateCarousel() {
 			const slides = document.querySelectorAll('.carousel-slide');
@@ -1277,6 +1375,22 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 			});
 		}
 		
+		function updateCarouselMobile() {
+			const slides = document.querySelectorAll('.carousel-slide-mobile');
+			
+			slides.forEach((slide, index) => {
+				slide.classList.remove('active', 'prev', 'next');
+				
+				if (index === currentSlideMobile) {
+					slide.classList.add('active');
+				} else if (index === (currentSlideMobile - 1 + totalSlides) % totalSlides) {
+					slide.classList.add('prev');
+				} else if (index === (currentSlideMobile + 1) % totalSlides) {
+					slide.classList.add('next');
+				}
+			});
+		}
+		
 		function nextSlide() {
 			currentSlide = (currentSlide + 1) % totalSlides;
 			updateCarousel();
@@ -1287,11 +1401,21 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 			updateCarousel();
 		}
 		
-		// Initialize carousel
+		function nextSlideMobile() {
+			currentSlideMobile = (currentSlideMobile + 1) % totalSlides;
+			updateCarouselMobile();
+		}
+		
+		function previousSlideMobile() {
+			currentSlideMobile = (currentSlideMobile - 1 + totalSlides) % totalSlides;
+			updateCarouselMobile();
+		}
+		
+		// Initialize carousels
 		document.addEventListener('DOMContentLoaded', function() {
+			// Desktop carousel
 			updateCarousel();
 			
-			// Add event listeners to buttons
 			const prevBtn = document.getElementById('prevBtn');
 			const nextBtn = document.getElementById('nextBtn');
 			
@@ -1309,8 +1433,29 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 				});
 			}
 			
+			// Mobile carousel
+			updateCarouselMobile();
+			
+			const prevBtnMobile = document.getElementById('prevBtnMobile');
+			const nextBtnMobile = document.getElementById('nextBtnMobile');
+			
+			if (prevBtnMobile) {
+				prevBtnMobile.addEventListener('click', function(e) {
+					e.preventDefault();
+					previousSlideMobile();
+				});
+			}
+			
+			if (nextBtnMobile) {
+				nextBtnMobile.addEventListener('click', function(e) {
+					e.preventDefault();
+					nextSlideMobile();
+				});
+			}
+			
 			// Auto-play functionality (optional)
 			setInterval(nextSlide, 5000);
+			setInterval(nextSlideMobile, 5000);
 		});
 		
 		// Touch/swipe support for mobile
