@@ -10,6 +10,476 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 ---
 
 <Layout title="Ben Ricciardi" description="Ben Ricciardi's personal website" currentPage="home">
+	<!-- Mobile Layout (visible on screens < md) -->
+	<div class="block md:hidden bg-black relative w-full min-h-screen overflow-x-hidden">
+		<!-- Mobile Menu Icon -->
+		<button class="absolute right-5 top-[34px] w-10 h-10 flex items-center justify-center" aria-label="Menu">
+			<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+			</svg>
+		</button>
+
+		<!-- Hero Banner Section -->
+		<section class="pt-[114px] px-5 pb-20">
+			<div class="flex flex-col gap-8 items-center w-full  mx-auto">
+				<!-- Action Text -->
+				<div class="flex gap-5 items-center w-full">
+					<div class="h-0 relative w-[25px] shrink-0">
+						<img src="/assets/line-2.svg" alt="" class="w-full h-full" />
+					</div>
+					<p class="text-white text-base font-aktiv uppercase leading-6 tracking-[4px]">On the Course and in Business</p>
+				</div>
+
+				<!-- Titular -->
+				<div class="flex flex-col gap-7 items-start w-full">
+					<h1 class="text-white text-[96px] font-gazzetta-bold uppercase leading-[80px] tracking-[-1px] break-words">Power, Precision, and Performance</h1>
+					<p class="text-[#707070] text-xl font-aktiv-medium leading-7">
+						Driven by passion for golf and the thrill of creating meaningful business connections,<br>
+						<span class="font-aktiv-bold text-[#d63a2e]">Ben Ricciardi</span> brings energy, influence, and results to every round and every deal.
+					</p>
+				</div>
+
+				<!-- Hero Image -->
+				<div class="relative h-[345px] w-full rounded-[10px] rounded-br-[60px] overflow-hidden">
+					<img src="/assets/img/img-herobanner.png" alt="Ben Ricciardi" class="absolute inset-0 w-full h-full object-cover" />
+					<div class="absolute bottom-7 left-7 right-7">
+						<div class="relative">
+							<img src="/assets/vector-1.svg" alt="" class="w-full" />
+							<div class="absolute top-[50.87px] left-[20.97px] max-w-[282px]">
+								<p class="text-black text-sm font-aktiv italic leading-5 tracking-[-0.4px]">
+									Nestled in a serene setting, our club boasts a meticulously designed course that challenges and inspires golfers of all abilities.
+								</p>
+							</div>
+							<button class="absolute bottom-[101.59px] left-[15px] w-9 h-9 bg-[#d63a2e] rounded-full flex items-center justify-center">
+								<svg class="w-2 h-2 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- CTA Button -->
+				<a href="#" class="flex items-center bg-white rounded-full px-8 py-4 w-[208px]">
+					<span class="text-black text-xl font-aktiv-bold leading-[30px] tracking-[-0.8px] mr-3">More about</span>
+					<div class="bg-[#d63a2e] rounded-full w-10 h-10 flex items-center justify-center shrink-0">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 18 18" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- About Section -->
+		<section class="px-5 pb-20">
+			<div class="flex flex-col gap-10 items-start w-full  mx-auto">
+				<!-- Section Header -->
+				<div class="flex justify-between items-start w-full h-[30px]">
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">01</div>
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">ABOUT</div>
+				</div>
+
+				<!-- About Content -->
+				<div class="flex flex-col gap-5 w-full">
+					<!-- Image and Title -->
+					<div class="flex flex-col gap-10">
+						<div class="h-[118px] rounded-[10px] rounded-br-[200px] overflow-hidden">
+							<img src="/assets/img/rectangle-1.png" alt="Ben Ricciardi" class="w-full h-full object-cover" />
+						</div>
+						<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[84px] break-words">Who's Ben?</h2>
+					</div>
+
+					<!-- Description -->
+					<p class="text-white text-[32px] font-aktiv-medium leading-[44px] tracking-[-2px]">
+						Dynamic, ambitious, and unstoppable <span class="font-aktiv-bold text-[#d63a2e]">Ben</span> is not just a golfer, but a <span class="font-aktiv-medium italic">connector</span> of people and <span class="font-aktiv-medium italic">opportunities</span>.<br><br>
+						<span class="text-xl font-aktiv-light leading-8">With an impressive presence on and off the course, he combines his love for golf with his passion for building powerful business relationships. Every swing tells a story of discipline, focus, and determination — qualities that also define his professional life.</span>
+					</p>
+				</div>
+
+				<!-- Golf is more than a game -->
+				<div class="flex flex-col gap-5 w-full mt-5">
+					<h3 class="text-white text-[40px] font-aktiv-bold leading-[39px] tracking-[-2px] text-center">Golf is more than a game</h3>
+					<p class="text-[#707070] text-xl font-aktiv-light leading-8 text-center">
+						Beyond the course, our club offers a range of world-class amenities, including a modern clubhouse, fine dining, professional golf instruction, and a pro shop stocked with the latest gear.
+					</p>
+					<div class="flex items-center gap-4">
+						<p class="text-white text-xl font-aktiv-medium leading-[30px] tracking-[-0.4px]">Ready to join us? Let's talk</p>
+						<div class="bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center shrink-0">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+							</svg>
+						</div>
+					</div>
+				</div>
+
+				<!-- Videos -->
+				<div class="flex flex-col gap-5 w-full mt-5">
+					<div class="relative h-[242px] w-full rounded-[10px] overflow-hidden">
+						<img src="/assets/img/maxresdefault-webp-1.png" alt="Video 1" class="absolute inset-0 w-full h-full object-cover" />
+						<div class="absolute inset-0 flex items-center justify-center">
+							<div class="bg-white/43 rounded-full w-14 h-14 flex items-center justify-center border border-white">
+								<svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M8 5v14l11-7z"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="relative h-[242px] w-full rounded-[10px] overflow-hidden">
+						<img src="/assets/img/maxresdefault-webp-2.png" alt="Video 2" class="absolute inset-0 w-full h-full object-cover" />
+						<div class="absolute inset-0 flex items-center justify-center">
+							<div class="bg-white/43 rounded-full w-14 h-14 flex items-center justify-center border border-white">
+								<svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+									<path d="M8 5v14l11-7z"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Latest Content Section -->
+		<section class="px-3 pb-20">
+			<div class="flex flex-col gap-10 items-center w-full  mx-auto">
+				<!-- Section Header -->
+				<div class="flex justify-between items-start w-full h-[30px]">
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">02</div>
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">Highlights</div>
+				</div>
+
+				<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[84px] text-center break-words">Latest content</h2>
+
+				<!-- Gallery -->
+				<div class="relative w-full">
+					<div class="h-[324px] rounded-[20px] overflow-hidden relative">
+						<img src="/assets/img/rectangle-1.png" alt="Latest content" class="absolute inset-0 w-full h-full object-cover" />
+						<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/40"></div>
+					</div>
+					<!-- Navigation Arrows -->
+					<div class="absolute top-[146px] left-0 right-0 flex justify-between px-5">
+						<button class="rotate-180 scale-y-[-100%] bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+							</svg>
+						</button>
+						<button class="scale-y-[-100%] bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Golf Achievements Section -->
+		<section class="px-5 pb-20 relative">
+			<div class="flex flex-col gap-10 items-start w-full  mx-auto">
+				<!-- Section Header -->
+				<div class="flex justify-between items-start w-full h-[30px]">
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">02</div>
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">golf achievements</div>
+				</div>
+
+				<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[80px] break-words">Mentality that conquered<br>business</h2>
+
+				<!-- Timeline would go here - simplified for mobile -->
+				<div class="w-full flex justify-center my-10">
+					<div class="relative w-52 h-52 border border-white rounded-lg">
+						<img src="/assets/img/rectangle-3.png" alt="Achievement" class="w-full h-full object-cover rounded-lg" />
+					</div>
+				</div>
+
+				<div class="flex flex-col gap-5 w-full">
+					<h3 class="text-white text-2xl font-aktiv-medium uppercase tracking-[3px]">Expert Line</h3>
+					<p class="text-[#bfbfbf] text-xl font-aktiv leading-8">
+						Beyond the course, our club offers a range of world-class amenities, including a modern clubhouse, fine dining, professional golf instruction, and a pro shop stocked with the latest gear.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Reviews Section -->
+		<section class="px-5 pb-20">
+			<div class="flex flex-col gap-10 items-start w-full  mx-auto">
+				<!-- Section Header -->
+				<div class="flex justify-between items-start w-full h-[30px]">
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">04</div>
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">reviews</div>
+				</div>
+
+				<div class="flex flex-col gap-5 w-full">
+					<p class="text-white text-[32px] font-aktiv-medium leading-[42px] tracking-[-1px] text-center">
+						"For <span class="font-aktiv-bold text-[#d63a2e]">Ben</span>, golf is the gateway to opportunities. He believes that the best partnerships are built while walking the fairway. By combining vision, energy, and strategy, he connects with leaders and entrepreneurs, turning a shared passion for golf into successful business ventures."
+					</p>
+
+					<div class="relative h-[355px] w-full rounded-[12px] rounded-br-[40px] overflow-hidden">
+						<img src="/assets/img/portrait.png" alt="Portrait" class="absolute inset-0 w-full h-full object-cover" />
+						<div class="absolute top-[58px] left-5">
+							<h3 class="text-white text-[40px] font-gazzetta-black uppercase leading-9">
+								Where passion for the game<br>meets the success.
+							</h3>
+						</div>
+						<div class="absolute bottom-20 left-4 text-white text-base font-aktiv-medium tracking-[-1.04px]">EXCLUSIVITY</div>
+						<div class="absolute bottom-16 left-1/2 -translate-x-1/2 text-white text-base font-aktiv-medium tracking-[-1.04px]">EXCELLENCE</div>
+						<div class="absolute bottom-10 right-4 text-white text-base font-aktiv-medium tracking-[-1.04px]">COMMUNITY</div>
+					</div>
+
+					<a href="#" class="flex items-center justify-between border border-white rounded-xl px-5 py-4">
+						<span class="text-white text-base font-aktiv-medium tracking-[-0.4px]">Let's talk</span>
+						<div class="bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+							</svg>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Quick Tips Section -->
+		<section class="px-5 pb-20">
+			<div class="flex flex-col gap-10 items-center w-full  mx-auto">
+				<div class="flex flex-col gap-10 items-start w-full">
+					<!-- Section Header -->
+					<div class="flex justify-between items-start w-full h-[30px]">
+						<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">05</div>
+						<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">tips & more</div>
+					</div>
+
+					<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[80px] break-words">Quick tips</h2>
+				</div>
+
+				<div class="flex flex-col gap-[30px] w-full">
+					<!-- Tip 01 -->
+					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col gap-5 pt-5">
+						<div class="flex items-start gap-4 py-[10px]">
+							<div class="text-[#d63a2e] text-[32px] font-aktiv-bold leading-9 tracking-[-1.6px] w-[54px] shrink-0">01</div>
+							<div class="flex flex-col gap-3 flex-1">
+								<h3 class="text-white text-[28px] font-aktiv-bold leading-[48px] tracking-[-1px]">Advice</h3>
+								<p class="text-[#707070] text-base font-aktiv-light leading-6">
+									Participate in members-only tournaments, social events, and seasonal competitions that bring the community together.
+								</p>
+							</div>
+						</div>
+						<div class="h-[230px] rounded-[10px] overflow-hidden">
+							<img src="/assets/img/benefits-2.png" alt="Benefits" class="w-full h-full object-cover" />
+						</div>
+					</div>
+
+					<!-- Tip 02 -->
+					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col gap-5 pt-5">
+						<div class="flex items-start gap-4 py-[10px]">
+							<div class="text-[#d63a2e] text-[32px] font-aktiv-bold leading-9 tracking-[-1.6px] w-[54px] shrink-0">02</div>
+							<div class="flex flex-col gap-3 flex-1">
+								<h3 class="text-white text-[28px] font-aktiv-bold leading-[48px] tracking-[-1px]">Advice</h3>
+								<p class="text-[#707070] text-base font-aktiv-light leading-6">
+									Participate in members-only tournaments, social events, and seasonal competitions that bring the community together.
+								</p>
+							</div>
+						</div>
+						<div class="h-[230px] rounded-[10px] overflow-hidden">
+							<img src="/assets/img/benefits-2.png" alt="Benefits" class="w-full h-full object-cover" />
+						</div>
+					</div>
+
+					<!-- Tip 03 -->
+					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col gap-5 pt-5">
+						<div class="flex items-start gap-4 py-[10px]">
+							<div class="text-[#d63a2e] text-[32px] font-aktiv-bold leading-9 tracking-[-1.6px] w-[54px] shrink-0">03</div>
+							<div class="flex flex-col gap-3 flex-1">
+								<h3 class="text-white text-[28px] font-aktiv-bold leading-[48px] tracking-[-1px]">Advice</h3>
+								<p class="text-[#707070] text-base font-aktiv-light leading-6">
+									Participate in members-only tournaments, social events, and seasonal competitions that bring the community together.
+								</p>
+							</div>
+						</div>
+						<div class="h-[230px] rounded-[10px] overflow-hidden">
+							<img src="/assets/img/benefits-2.png" alt="Benefits" class="w-full h-full object-cover" />
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="flex items-center justify-between border border-white rounded-xl px-5 py-4 w-full mt-5">
+					<span class="text-white text-base font-aktiv-medium tracking-[-0.4px]">View more</span>
+					<div class="bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center">
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+						</svg>
+					</div>
+				</a>
+			</div>
+		</section>
+
+		<!-- Business Network Section -->
+		<section class="px-5 pb-20">
+			<div class="flex flex-col gap-10 items-start w-full  mx-auto">
+				<!-- Section Header -->
+				<div class="flex justify-between items-start w-full h-[30px]">
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">06</div>
+					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">business</div>
+				</div>
+
+				<div class="flex flex-col gap-5 w-full">
+					<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[80px] break-words">
+						business<br>network
+					</h2>
+					<p class="text-[#707070] text-[32px] font-aktiv italic leading-10 tracking-[-1px]">
+						How to turn golf into<br>
+						a <span class="font-aktiv-bold not-italic">business network</span>?
+					</p>
+				</div>
+
+				<!-- Accordion -->
+				<div class="flex flex-col gap-[21px] w-full mt-5">
+					<div class="border border-white rounded-xl px-5 py-[10px] flex items-center justify-between">
+						<h3 class="text-white text-2xl font-aktiv-bold leading-[56px]">How 01?</h3>
+						<button class="rotate-180 w-10 h-10 flex items-center justify-center">
+							<svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+							</svg>
+						</button>
+					</div>
+					<div class="px-[10px] py-[10px]">
+						<p class="text-white text-xl font-aktiv-light leading-8">
+							Participate in members-only tournaments, social events, and seasonal competitions that bring the community together.
+						</p>
+					</div>
+					<div class="border border-white rounded-xl px-5 py-[10px] flex items-center justify-between">
+						<h3 class="text-white text-2xl font-aktiv-bold leading-[56px]">How 02?</h3>
+						<button class="rotate-90 w-10 h-10 flex items-center justify-center">
+							<svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+							</svg>
+						</button>
+					</div>
+					<div class="border border-white rounded-xl px-5 py-[10px] flex items-center justify-between">
+						<h3 class="text-white text-2xl font-aktiv-bold leading-[56px]">How 03?</h3>
+						<button class="rotate-90 w-10 h-10 flex items-center justify-center">
+							<svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Partnerships Section -->
+		<section class="px-5 pb-20">
+			<div class="flex flex-col gap-10 items-center w-full  mx-auto">
+				<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[80px] text-center break-words">partnerships</h2>
+				<div class="flex gap-12 items-center justify-center overflow-x-auto w-full pb-5">
+					<img src="/assets/logos/monster.png" alt="Monster" class="w-[100px] h-[100px] object-contain shrink-0" />
+					<img src="/assets/logos/nike.png" alt="Nike" class="w-[100px] h-[100px] object-contain shrink-0" />
+					<img src="/assets/logos/roscoes.png" alt="Roscoes" class="w-[100px] h-[100px] object-contain shrink-0" />
+					<img src="/assets/logos/shoepalace.png" alt="Shoe Palace" class="w-[100px] h-[100px] object-contain shrink-0" />
+					<img src="/assets/logos/simplisafe.png" alt="SimpliSafe" class="w-[100px] h-[100px] object-contain shrink-0" />
+				</div>
+			</div>
+		</section>
+
+		<!-- YouTube Channel Section -->
+		<section class="px-5 pb-20">
+			<div class="flex flex-col gap-10 items-end w-full  mx-auto">
+				<div class="flex flex-col gap-10 items-start w-full">
+					<!-- Section Header -->
+					<div class="flex justify-between items-start w-full h-[30px]">
+						<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">07</div>
+						<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">youtube channel</div>
+					</div>
+
+					<div class="flex flex-col gap-5 w-full">
+						<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[80px] break-words">All the content!</h2>
+						<p class="text-white text-xl font-aktiv-light leading-8">
+							Subscribe to join the journey and elevate your own game!
+						</p>
+					</div>
+				</div>
+
+				<!-- Videos -->
+				<div class="flex flex-col gap-5 w-full">
+					<div class="border border-[#757575] rounded-[20px] p-5 h-[280px] flex items-center justify-center overflow-hidden">
+						<div class="relative w-full h-full rounded-2xl overflow-hidden">
+							<img src="/assets/img/maxresdefault-webp.png" alt="Video" class="absolute inset-0 w-full h-full object-cover" />
+							<div class="absolute inset-0 flex items-center justify-center">
+								<img src="/assets/video-wrapper-default.svg" alt="Play" class="w-16 h-16" />
+							</div>
+						</div>
+					</div>
+					<div class="border border-[#757575] rounded-[20px] p-5 h-[280px] flex items-center justify-center overflow-hidden">
+						<div class="relative w-full h-full rounded-2xl overflow-hidden">
+							<img src="/assets/img/maxresdefault-webp-1.png" alt="Video" class="absolute inset-0 w-full h-full object-cover" />
+							<div class="absolute inset-0 flex items-center justify-center">
+								<img src="/assets/video-wrapper-default.svg" alt="Play" class="w-16 h-16" />
+							</div>
+						</div>
+					</div>
+					<div class="border border-[#757575] rounded-[20px] p-5 h-[280px] flex items-center justify-center overflow-hidden">
+						<div class="relative w-full h-full rounded-2xl overflow-hidden">
+							<img src="/assets/img/rectangle-1.png" alt="Video" class="absolute inset-0 w-full h-full object-cover" />
+							<div class="absolute inset-0 flex items-center justify-center">
+								<img src="/assets/video-wrapper-default.svg" alt="Play" class="w-16 h-16" />
+							</div>
+						</div>
+					</div>
+					<div class="border border-[#757575] rounded-[20px] p-5 h-[280px] flex items-center justify-center overflow-hidden">
+						<div class="relative w-full h-full rounded-2xl overflow-hidden">
+							<img src="/assets/img/maxresdefault-webp-2.png" alt="Video" class="absolute inset-0 w-full h-full object-cover" />
+							<div class="absolute inset-0 flex items-center justify-center">
+								<img src="/assets/video-wrapper-default.svg" alt="Play" class="w-16 h-16" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<section class="px-0 pb-20">
+			<div class="flex flex-col items-center w-full">
+				<div class="flex flex-col gap-10 items-center w-full  mx-auto px-5">
+					<h2 class="text-white text-[140px] font-gazzetta-bold uppercase leading-[100px] text-center break-words">let's play!</h2>
+					<p class="text-[#d2d2db] text-[28px] font-aktiv leading-9 text-center">
+						Looking to collaborate, play a round, or explore business opportunities?<br><br>
+						<span class="text-xl">Get in touch with and start the conversation:</span>
+					</p>
+					<a href="#" class="flex items-center justify-between border border-[#757575] rounded-xl px-10 py-5 w-full">
+						<span class="text-white text-[28px] font-aktiv text-center leading-6">e-mail:</span>
+						<div class="bg-[#d63a2e] rounded-full w-8 h-8 flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M14.2163 8.10001L8.0837 1.96651L9.3563 0.693909L17.6624 9.00001L9.3554 17.3061L8.0837 16.0335L14.2163 9.90001H1.0502V8.10001H14.2163Z" fill="white"/>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="bg-gradient-to-b from-black from-[2.264%] to-[#d63a2e] w-full mt-10 flex flex-col items-center justify-center gap-[10px] h-[583px] pt-[70px]">
+					<div class="flex gap-[10px] items-center">
+						<a href="#" class="w-10 h-10 rounded-full border border-white/6 flex items-center justify-center">
+							<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+							</svg>
+						</a>
+						<a href="#" class="w-10 h-10 rounded-full border border-white/6 flex items-center justify-center">
+							<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+							</svg>
+						</a>
+						<a href="#" class="w-10 h-10 rounded-full border border-white/6 flex items-center justify-center">
+							<svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+							</svg>
+						</a>
+					</div>
+					<p class="text-[#d2d2db] text-sm font-aktiv leading-[21px]">Copyright © 2025</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Desktop Layout (hidden on mobile, visible on md+) -->
+	<div class="hidden md:block">
 	<!-- Hero Section -->
 	<section class="w-full p-20">
 		<div class="w-full max-w-[1440px] mx-auto">
@@ -887,6 +1357,7 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 			});
 		});
 	</script>
+	</div>
+	<!-- End Desktop Layout -->
 
-</Layout>
 </Layout>
