@@ -215,20 +215,45 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 		</section>
 
 		<!-- Golf Achievements Section -->
-		<section class="px-5 pb-20 relative">
+		<section class="pb-20 relative">
 			<div class="flex flex-col gap-10 items-start w-full  mx-auto">
 				<!-- Section Header -->
-				<div class="flex justify-between items-start w-full h-[30px]">
+				<div class="px-5 flex justify-between items-start w-full h-[30px]">
 					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">02</div>
 					<div class="text-white text-base font-aktiv-medium uppercase tracking-[4px]">golf achievements</div>
 				</div>
 
-				<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[80px] break-words">Mentality that conquered<br>business</h2>
+				<h2 class="text-white text-[90px] font-gazzetta-bold uppercase leading-[80px] px-5 break-words">Mentality that conquered<br>business</h2>
 
 				<!-- Timeline would go here - simplified for mobile -->
-				<div class="w-full flex justify-center my-10">
-					<div class="relative w-[52px] h-[52px] border border-white rounded-lg">
-						<img src="/assets/img/rectangle-3.png" alt="Achievement" class="w-full h-full object-cover rounded-lg" />
+				<div class="w-full flex justify-center items-center my-10 relative overflow-hidden">
+					<div class="relative w-[calc(100vw+23rem)] h-[calc(100vw+23rem)] left-1/2 -translate-x-1/2">
+						<!-- Outer circle with border -->
+						<div class="bg-black w-full h-full aspect-square rounded-full border-[4rem] border-neutral-800 flex items-center justify-center absolute">
+							<!-- Inner circle -->
+							<div class="bg-black w-[calc(100vw+10rem)] aspect-square rounded-full border border-neutral-800 flex items-center justify-center">
+								<!-- Center logo -->
+								<div class="relative w-[52px] h-[52px] border border-white rounded-lg">
+									<img src="/assets/img/rectangle-3.png" alt="Achievement" class="w-full h-full object-cover rounded-lg" />
+								</div>
+							</div>
+						</div>
+						
+						<!-- Years positioned around the arc -->
+						<div class="absolute inset-0 flex items-center justify-center">
+							<!-- 2025 - top left arc -->
+							<div class="absolute text-white font-aktiv-medium text-2xl" style="top: 15%; left: 20%; transform: rotate(-20deg);">
+								2025
+							</div>
+							<!-- 2024 - center bottom -->
+							<div class="absolute text-white font-aktiv-medium text-2xl" style="bottom: 10%; left: 50%; transform: translateX(-50%);">
+								2024
+							</div>
+							<!-- 2023 - top right arc -->
+							<div class="absolute text-white font-aktiv-medium text-2xl" style="top: 15%; right: 20%; transform: rotate(20deg);">
+								2023
+							</div>
+						</div>
 					</div>
 				</div>
 
