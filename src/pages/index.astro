@@ -11,7 +11,7 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 
 <Layout title="Ben Ricciardi" description="Ben Ricciardi's personal website" currentPage="home">
 	<!-- Mobile Layout (visible on screens < lg) -->
-	<div class="block lg:hidden bg-black relative w-full min-h-screen overflow-x-hidden">
+	<div class="block xl:hidden bg-black relative w-full min-h-screen overflow-x-hidden">
 		<!-- Mobile Menu Icon -->
 		<button class="absolute right-5 top-[34px] w-10 h-10 flex items-center justify-center" aria-label="Menu">
 			<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -112,8 +112,8 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 				</div>
 
 				<!-- Videos -->
-				<div class="flex flex-col gap-5 w-full mt-5">
-					<div class="relative h-[242px] w-full rounded-[10px] overflow-hidden">
+				<div class="flex flex-col sm:flex-row gap-5 w-full mt-5">
+					<div class="relative h-[242px] w-full sm:w-1/2 rounded-[10px] overflow-hidden">
 						<img src="/assets/img/maxresdefault-webp-1.png" alt="Video 1" class="absolute inset-0 w-full h-full object-cover" />
 						<div class="absolute inset-0 bg-black/20 z-10"></div>
 						<div class="absolute inset-0 flex items-center justify-center z-20">
@@ -124,7 +124,7 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 							</div>
 						</div>
 					</div>
-					<div class="relative h-[242px] w-full rounded-[10px] overflow-hidden">
+					<div class="relative h-[242px] w-full sm:w-1/2 rounded-[10px] overflow-hidden">
 						<img src="/assets/img/maxresdefault-webp-2.png" alt="Video 2" class="absolute inset-0 w-full h-full object-cover" />
 						<div class="absolute inset-0 bg-black/20 z-10"></div>
 						<div class="absolute inset-0 flex items-center justify-center z-20">
@@ -324,49 +324,49 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 
 				<div class="flex flex-col gap-[30px] w-full">
 					<!-- Tip 01 -->
-					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col gap-5 pt-5">
-						<div class="flex items-start gap-4 py-[10px]">
+					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col md:flex-row md:justify-between md:items-center gap-5 pt-5 md:py-10 md:px-9">
+						<div class="flex items-start gap-4 py-[10px] md:py-0">
 							<div class="text-[#d63a2e] text-[32px] font-aktiv-bold leading-9 tracking-[-1.6px] w-[54px] shrink-0">01</div>
 							<div class="flex flex-col gap-3 flex-1">
 								<h3 class="text-white text-[28px] font-aktiv-bold leading-[37px] tracking-[-1px]">Advice</h3>
-								<p class="text-[#707070] text-base font-aktiv-light leading-6">
+								<p class="text-[#707070] text-xl font-aktiv-light leading-6 max-w-[500px]">
 									Participate in members-only tournaments, social events, and seasonal competitions that bring the community together.
 								</p>
 							</div>
 						</div>
-						<div class="h-[230px] rounded-[10px] overflow-hidden">
+						<div class="h-[230px] md:h-56 md:w-72 rounded-[10px] overflow-hidden">
 							<img src="/assets/img/benefits-2.png" alt="Benefits" class="w-full h-full object-cover" />
 						</div>
 					</div>
 
 					<!-- Tip 02 -->
-					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col gap-5 pt-5">
-						<div class="flex items-start gap-4 py-[10px]">
+					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col md:flex-row md:justify-between md:items-center gap-5 pt-5 md:py-10 md:px-9">
+						<div class="flex items-start gap-4 py-[10px] md:py-0">
 							<div class="text-[#d63a2e] text-[32px] font-aktiv-bold leading-9 tracking-[-1.6px] w-[54px] shrink-0">02</div>
 							<div class="flex flex-col gap-3 flex-1">
 								<h3 class="text-white text-[28px] font-aktiv-bold leading-[37px] tracking-[-1px]">Advice</h3>
-								<p class="text-[#707070] text-base font-aktiv-light leading-6">
+								<p class="text-[#707070] text-xl font-aktiv-light leading-6 max-w-[500px]">
 									Participate in members-only tournaments, social events, and seasonal competitions that bring the community together.
 								</p>
 							</div>
 						</div>
-						<div class="h-[230px] rounded-[10px] overflow-hidden">
+						<div class="h-[230px] md:h-56 md:w-72 rounded-[10px] overflow-hidden">
 							<img src="/assets/img/benefits-2.png" alt="Benefits" class="w-full h-full object-cover" />
 						</div>
 					</div>
 
 					<!-- Tip 03 -->
-					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col gap-5 pt-5">
-						<div class="flex items-start gap-4 py-[10px]">
+					<div class="border-t border-[rgba(154,154,154,0.4)] flex flex-col md:flex-row md:justify-between md:items-center gap-5 pt-5 md:py-10 md:px-9">
+						<div class="flex items-start gap-4 py-[10px] md:py-0">
 							<div class="text-[#d63a2e] text-[32px] font-aktiv-bold leading-9 tracking-[-1.6px] w-[54px] shrink-0">03</div>
 							<div class="flex flex-col gap-3 flex-1">
 								<h3 class="text-white text-[28px] font-aktiv-bold leading-[37px] tracking-[-1px]">Advice</h3>
-								<p class="text-[#707070] text-base font-aktiv-light leading-6">
+								<p class="text-[#707070] text-xl font-aktiv-light leading-6 max-w-[500px]">
 									Participate in members-only tournaments, social events, and seasonal competitions that bring the community together.
 								</p>
 							</div>
 						</div>
-						<div class="h-[230px] rounded-[10px] overflow-hidden">
+						<div class="h-[230px] md:h-56 md:w-72 rounded-[10px] overflow-hidden">
 							<img src="/assets/img/benefits-2.png" alt="Benefits" class="w-full h-full object-cover" />
 						</div>
 					</div>
@@ -616,8 +616,8 @@ import customImage from '../../public/assets/img/363504b4e12a145512a97e26fa1441c
 		</section> -->
 	</div>
 
-	<!-- Desktop Layout (hidden on mobile, visible on lg+) -->
-	<div class="hidden lg:block">
+	<!-- Desktop Layout (hidden on mobile, visible on xl+) -->
+	<div class="hidden xl:block">
 	<!-- Hero Section -->
 	<section class="w-full p-20">
 		<div class="w-full max-w-[1440px] mx-auto">
