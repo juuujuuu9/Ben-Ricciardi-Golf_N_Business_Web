@@ -77,3 +77,10 @@
 .marquee-content:hover {
   animation-play-state: paused;
 }
+
+/* Faster marquee on mobile */
+@media (max-width: 1279px) {
+  .marquee-content {
+    animation-duration: 18s;
+  }
+}
